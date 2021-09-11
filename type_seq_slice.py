@@ -82,20 +82,31 @@ example: str = example[4:-5]
 a = A[13:27]
 print(a)
 # str: Jan Twardowski
-b = B[10:24]
+b = B[10:]
 print(b)
 # str: Mark Watney
-c = C[0:11]
+c = C[:-5]
 print(c)
 # str: Melissa Lewis
-d = D[14:28]
+d = D[14:]
 print(d)
 # str: Ryan Stone
 e = E[11:]
 print(e)
 # str: Ryan Stone
-f = F[0:10]
+f = F[:-8]
 print(f)
 # str: Jan Twardowski
-g = G[9:23]
+g = G[9:-1]
 print(g)
+
+"""
+# Solution
+a = A[13:-12]
+b = B[10:]
+c = C[:-5]
+d = D[14:]
+e = E[11:]
+f = F[:-8]
+g = G[9:-1]
+"""
