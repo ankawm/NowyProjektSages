@@ -55,10 +55,10 @@ kB = 1024 * B
 MB = 1024 * kB
 
 # int: 100 Megabytes
-size = ...
+size = 100 * MB
 
 # int: size in kilobytes
-size_kB = ...
+size_kB = size // kB
 
 # int: size in megabits
-size_Mb = ...
+size_Mb = size // MB * B
