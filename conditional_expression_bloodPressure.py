@@ -87,15 +87,15 @@ diastolic = int(diastolic)
 
 # str: one of the STATUS_*
 if systolic < 120 and diastolic < 80:
-    result = "Normal"
+    result = STATUS_NORMAL
 elif systolic >= 120 and systolic < 129 and diastolic < 80:
-    result = "Elevated"
+    result = STATUS_ELEVATED
 elif (systolic >= 130 and systolic < 139) or (diastolic >= 80 and diastolic < 89):
-    result = "Hypertension stage 1"
+    result = STATUS_HYPERTENSION_STAGE_1
 elif systolic >= 180 or diastolic >= 120:
-    result = "Hypertensive Crisis"
+    result = STATUS_HYPERTENSIVE_CRISIS
 elif systolic >= 140 or diastolic >= 90:
-    result = "Hypertension stage 2"
+    result = STATUS_HYPERTENSION_STAGE_2
 else:
     result = "Error"
 
